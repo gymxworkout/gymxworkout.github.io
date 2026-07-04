@@ -1,83 +1,109 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="GymX - Gym Workout Trainer. Gym and home workout plans, diet guide, calorie & BMI tracker, works offline.">
-<title>GymX - Gym Workout Trainer</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f7fa;color:#333}
-header{background:linear-gradient(135deg,#1976d2,#0d47a1);color:#fff;padding:70px 20px;text-align:center}
-header img{width:110px;height:110px;border-radius:22px;background:#fff;padding:8px}
-.container{max-width:1100px;margin:auto;padding:40px 20px}
-.btn{display:inline-block;background:#34a853;color:#fff;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:bold}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:30px}
-.card{background:#fff;border-radius:12px;padding:24px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:15px;margin:40px 0}
-.stat{background:#fff;padding:20px;border-radius:12px;text-align:center;box-shadow:0 4px 14px rgba(0,0,0,.08)}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
-.shot{aspect-ratio:9/19;background:#dde7f5;border:2px dashed #8aa7d6;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#666}
-footer{background:#1f2937;color:#fff;padding:35px 20px;margin-top:50px}
-footer a{color:#90caf9;text-decoration:none}
-</style>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="description" content="GymX Workout Trainer">
+		<title>GymX - Gym Workout Trainer</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header class="hero">
+			<img class="logo" src="assets/logo.png" alt="GymX Logo">
+			<h1>GymX - Gym Workout Trainer</h1>
+			<p>Your Complete Gym & Home Workout Companion</p>
+			<p>Build muscle, lose weight, burn fat and stay fit with professional workout plans, diet guides, fitness calculators and progress tracking.</p>
+			
+			<a class="btn"
+				href="https://play.google.com/store/apps/details?id=com.gymx.workout"
+				target="_blank"
+				rel="noopener noreferrer">Download on Google Play
+			</a>
+			
+		</header>
 
-<header>
-<img src="assets/logo.png" alt="GymX Logo">
-<h1>GymX - Gym Workout Trainer</h1>
-<p>Your Complete Gym & Home Workout Companion</p>
-<p>Build muscle, lose weight, burn fat and stay fit with professional workout plans, diet guides, fitness calculators and progress tracking.</p>
-<p><a class="btn" href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME">Download on Google Play</a></p>
-</header>
+		<main class="container">
+			<section class="stats">
+				<div class="stat"><h2>15K+</h2><span>Downloads</span></div>
+				<div class="stat"><h2>4.9★</h2><span>User Rating</span></div>
+				<div class="stat"><h2>100+</h2><span>Exercises</span></div>
+				<div class="stat"><h2>Offline</h2><span>No Internet Required</span></div>
+			</section>
 
-<div class="container">
+			<h2>Why Choose GymX?</h2>
+			
+			<section class="grid">
+				<div class="card"><h3>🏋️ Workout Plans</h3><p>Bodybuilding, muscle gain, fat loss, weight loss, powerlifting and fitness plans.</p></div>
+				<div class="card"><h3>💪 Exercise Library</h3><p>100+ exercises with GIF animations and detailed instructions.</p></div>
+				<div class="card"><h3>🍎 Diet & Fitness</h3><p>Diet guide, calorie, protein and BMI calculators.</p></div>
+				<div class="card"><h3>📈 Progress Tracking</h3><p>Track sets, reps, weights and favourites.</p></div>
+				<div class="card"><h3>🏠 Home & Gym</h3><p>Designed for both home and gym workouts.</p></div>
+				<div class="card"><h3>📱 Works Offline</h3><p>Train anytime after installation without internet.</p></div>
+			</section>
 
-<div class="stats">
-<div class="stat"><h2>15K+</h2><p>Downloads</p></div>
-<div class="stat"><h2>4.9★</h2><p>User Rating</p></div>
-<div class="stat"><h2>100+</h2><p>Exercises</p></div>
-<div class="stat"><h2>Offline</h2><p>No Internet Required</p></div>
-</div>
+			<h2 class="mt">App Screenshots</h2>
+			
+			<section class="gallery">
+				<div class="phone">
+					<div class="screen">
+						<img src="assets/home.png" alt="GymX Home Screen">
+					</div>
+				</div>
+				<div class="phone">
+					<div class="screen">
+						<img src="assets/workout.png" alt="Workout List">
+					</div>
+				</div>
+				<div class="phone">
+					<div class="screen">
+						<img src="assets/workout_details.png" alt="Workout Details">
+					</div>
+				</div>
+				<div class="phone">
+					<div class="screen">
+						<img src="assets/plan.png" alt="Workout Plans">
+					</div>
+				</div>
+				<div class="phone">
+					<div class="screen">
+						<img src="assets/plan_day.png" alt="Workout Plan Days">
+					</div>
+				</div>
+				<div class="phone">
+					<div class="screen">
+						<img src="assets/plan_details.png" alt="Workout Plan Details">
+					</div>
+				</div>
+				<div class="phone">
+					<div class="screen">
+						<img src="assets/utility.png" alt="Fitness Utilities">
+					</div>
+				</div>
+				<div class="phone">
+					<div class="screen">
+						<img src="assets/favourite.png" alt="Favourite Exercises">
+					</div>
+				</div>
+			</section>
+			
+			<h2 class="mt">Support</h2>
+			
+			<p><strong>gymxworkout96@gmail.com</strong></p>
 
-<h2>Why Choose GymX?</h2>
+			<h2>Quick Links</h2>
+			<ul>
+				<li><a href="privacy-policy.html">Privacy Policy</a></li>
+				<li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+			</ul>
+		</main>
 
-<div class="grid">
-<div class="card"><h3>🏋️ Workout Plans</h3><p>Bodybuilding, muscle gain, fat loss, weight loss, powerlifting and fitness plans.</p></div>
-<div class="card"><h3>💪 Exercise Library</h3><p>100+ exercises with GIF animations and detailed instructions.</p></div>
-<div class="card"><h3>🍎 Diet & Fitness</h3><p>Diet guide, calorie calculator, protein calculator and BMI calculator.</p></div>
-<div class="card"><h3>📈 Progress Tracking</h3><p>Track sets, reps, weights, rest time and favourite exercises.</p></div>
-<div class="card"><h3>🏠 Home & Gym</h3><p>Designed for both home workouts and gym training.</p></div>
-<div class="card"><h3>📱 Works Offline</h3><p>Continue training anytime after installation without an internet connection.</p></div>
-</div>
-
-<h2 style="margin-top:50px">App Screenshots</h2>
-<div class="gallery">
-<div class="shot">Screenshot 1</div>
-<div class="shot">Screenshot 2</div>
-<div class="shot">Screenshot 3</div>
-<div class="shot">Screenshot 4</div>
-</div>
-
-<h2 style="margin-top:50px">Support</h2>
-<p>Email: <strong>gymxworkout96@gmail.com</strong></p>
-
-<h2>Quick Links</h2>
-<ul>
-<li><a href="privacy-policy.html">Privacy Policy</a></li>
-<li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-</ul>
-
-</div>
-
-<footer>
-<div style="max-width:1100px;margin:auto">
-<p><strong>GymX - Gym Workout Trainer</strong></p>
-<p>Gym & home workout trainer with workout plans, diet guide, calorie & BMI tracker.</p>
-<p>© GymX Workout Trainer. All Rights Reserved.</p>
-</div>
-</footer>
-
-</body>
+	<footer>
+		<div class="container">
+			<p><strong>GymX - Gym Workout Trainer</strong></p>
+			<p>Gym & home workout trainer with workout plans, diet guide, calorie & BMI tracker.</p>
+			<p>© GymX Workout Trainer. All Rights Reserved.</p>
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
+	</body>
 </html>
