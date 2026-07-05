@@ -224,65 +224,32 @@ img{
 ========================================== */
 
 .gallery{
-
     display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-    gap:40px;
-
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+    gap:30px;
     justify-items:center;
-
     margin-top:40px;
-
 }
 
-/* Phone Frame */
-
-.shot{
-
-    width:240px;
-
-    background:#111;
-
-    padding:12px;
-
-    border-radius:36px;
-
-    position:relative;
-
-    transition:.35s;
-
-    box-shadow:
-    0 20px 45px rgba(0,0,0,.22),
-    inset 0 0 0 2px #444;
-
+.phone{
+    width:170px;
+    transition:.3s ease;
 }
 
-/* Camera Notch */
+.phone:hover{
+    transform:translateY(-8px) scale(1.03);
+}
 
-.shot::before{
+.screen{
+    overflow:hidden;
+}
 
-    content:"";
-
-    position:absolute;
-
-    width:90px;
-
-    height:20px;
-
-    background:#000;
-
-    left:50%;
-
-    top:10px;
-
-    transform:translateX(-50%);
-
-    border-radius:0 0 15px 15px;
-
-    z-index:10;
-
+.screen img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
 }
 
 
@@ -346,34 +313,105 @@ footer a:hover{
 
 }
 
+/* Support Text Left */
+.support-title{
+    text-align:left;
+}
+
+/* Quick Links */
+
+.quick-links{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.quick-links a{
+
+    text-decoration:none;
+    color:#1976d2;
+
+    background:#fff;
+
+    padding:14px 24px;
+
+    border-radius:10px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.quick-links a:hover{
+
+    transform:translateY(-5px);
+
+}
+
 /* ==========================================
    Responsive
 ========================================== */
 
-@media(max-width:768px){
+@media (max-width:992px){
 
-	.hero{
-		padding:70px 20px;
-	}
+    .gallery{
+        grid-template-columns:repeat(3,1fr);
+    }
 
-	.hero h1{
-		font-size:34px;
-	}
+    .phone{
+        width:160px;
+    }
 
-	.hero p{
-		font-size:16px;
-	}
+}
 
-	.logo{
-		width:100px;
-		height:100px;
-	}
+@media (max-width:768px){
 
-	h2{
-		font-size:30px;
-	}
+    .hero{
+        padding:70px 20px;
+    }
 
-	.container{
-		padding:50px 15px;
-	}
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .logo{
+        width:100px;
+        height:100px;
+    }
+
+    h2{
+        font-size:30px;
+    }
+
+    .container{
+        padding:50px 15px;
+    }
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
+
+    .phone{
+        width:145px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .phone{
+        width:130px;
+    }
+
 }
