@@ -111,64 +111,64 @@ function initQRModal() {
    ========================================================================== */
 const EXERCISE_DATA = {
   chest: {
-    title: "Incline Barbell Bench Press",
-    equipment: "Barbell & Incline Bench",
-    targetMuscle: "Pectoralis Major (Clavicular Head)",
-    secondaryMuscles: "Triceps Brachii, Anterior Deltoids",
+    title: "Machine Pec Deck Fly",
+    equipment: "Machine",
+    targetMuscle: "Pectorals",
+    secondaryMuscles: "Front Deltoids, Anterior Deltoids",
     video: "assets/chest_sample.mp4",
     poster: "assets/bodypart.webp",
     muscleImg: "assets/pectoralis_major.webp",
     instructions: [
-      "Set your bench to a 30 to 45-degree angle with barbell racked safely above.",
-      "Grip the bar slightly wider than shoulder-width and unrack with elbows angled slightly inward.",
-      "Lower the bar under control toward upper chest while driving shoulder blades into bench.",
-      "Pause for half a second at bottom, then press back up explosively."
+      "Adjust the seat so the handles are at shoulder height.",
+      "Grip the handles with elbows slightly bent.",
+      "Bring your arms together and squeeze your chest.",
+      "Slowly return to the start and repeat."
     ]
   },
   arms: {
-    title: "Wide Grip Barbell Curl",
+    title: "Ez Bar Biceps Curl",
     equipment: "Barbell",
-    targetMuscle: "Biceps Brachii (Short & Long Head)",
-    secondaryMuscles: "Forearms, Anterior Deltoids",
+    targetMuscle: "Biceps",
+    secondaryMuscles: "Forearms, Front delts",
     video: "assets/arms_sample.mp4",
     poster: "assets/workout.webp",
     muscleImg: "assets/biceps_brachii.webp",
     instructions: [
-      "Stand holding a barbell with an underhand grip wider than shoulder-width.",
-      "Let the bar hang at arm's length in front of your thighs with elbows tucked close.",
-      "Curl the bar upward toward your shoulders, keeping your elbows stationary.",
-      "Pause and squeeze your biceps at the top, then slowly lower back to start."
+      "Stand shoulder-width apart and grip the EZ bar with palms facing up.",
+      "Keep your arms extended and elbows close to your sides.",
+      "Curl the bar toward your shoulders and squeeze your biceps.",
+      "Slowly lower the bar to the starting position and repeat."
     ]
   },
   back: {
     title: "Wide Grip Seated Cable Row",
-    equipment: "Cable Machine & Straight Bar",
-    targetMuscle: "Latissimus Dorsi",
+    equipment: "Cable & Bar",
+    targetMuscle: "Latissimus Lats",
     secondaryMuscles: "Rhomboids, Rear Delts, Traps, Biceps",
     video: "assets/back_sample.mp4",
     poster: "assets/workout.webp",
     muscleImg: "assets/latissimus_dorsi.webp",
     instructions: [
-      "Attach a straight bar to the low pulley cable and sit upright with knees slightly bent.",
-      "Grasp the bar with an overhand grip wider than shoulder-width.",
-      "Pull the bar toward your lower chest, driving your elbows wide and squeezing shoulder blades.",
-      "Slowly extend your arms back to the starting position under full control."
+      "Sit at the cable machine with knees slightly bent.",
+      "Grip the bar wider than shoulder-width with palms facing down.",
+      "Pull the bar toward your lower chest and squeeze your shoulder blades.",
+      "Slowly extend your arms to the starting position and repeat."
     ]
   },
   shoulders: {
     title: "Dumbbell Shoulder Press",
     equipment: "Dumbbells",
-    targetMuscle: "Anterior & Lateral Deltoids",
-    secondaryMuscles: "Triceps, Upper Trapezius, Core",
+    targetMuscle: "Front Deltoids",
+    secondaryMuscles: "Side delts, Triceps, Trapz, Abs",
     video: "assets/shoulder_sample.mp4",
     poster: "assets/workout_details.webp",
     muscleImg: "assets/anterior_deltoid.webp",
-    instructions: [
-      "Sit or stand holding a dumbbell in each hand at shoulder height with palms facing forward.",
-      "Engage your core and press the dumbbells overhead until arms are comfortably extended.",
-      "Avoid locking out your elbows sharply at the top of the movement.",
-      "Lower the dumbbells slowly back to shoulder height and repeat under control."
-    ]
+    "instructions": [
+		"Sit or stand with dumbbells at shoulder height, palms facing forward.",
+		"Engage your core and press the dumbbells overhead.",
+		"Keep your elbows slightly bent at the top.",
+		"Slowly lower the dumbbells to shoulder height and repeat."
+	]
   },
   abs: {
     title: "Half Sit Ups (Crunch)",
@@ -179,25 +179,25 @@ const EXERCISE_DATA = {
     poster: "assets/home.webp",
     muscleImg: "assets/rectus_abdominis.webp",
     instructions: [
-      "Lie flat on your back with knees bent, feet flat on the floor, and hands behind your head.",
-      "Engage your core and curl your upper body upward until your torso reaches a 45-degree angle.",
-      "Pause briefly at the halfway point while keeping your lower back pressed to the floor.",
-      "Slowly lower your torso back to the starting position while keeping tension on the abs."
-    ]
+      "Lie on your back with knees bent, feet flat, and hands behind your head.",
+	  "Engage your core and lift your upper body to a 45-degree angle.",
+	  "Pause briefly while keeping your abs tight.",
+	  "Slowly lower your upper body to the starting position and repeat."
+	]
   },
   legs: {
-    title: "Leg Press Machine",
-    equipment: "Leg Press Machine",
+    title: "Leg Extension Machine",
+    equipment: "Machine",
     targetMuscle: "Quadriceps",
-    secondaryMuscles: "Glutes, Hamstrings, Calves",
+    secondaryMuscles: "Glutes, Hamstrings",
     video: "assets/legs_sample.mp4",
     poster: "assets/bodypart.webp",
     muscleImg: "assets/quadriceps.webp",
     instructions: [
-      "Sit in the leg press machine with feet placed shoulder-width apart on the platform.",
-      "Release the safety handles and lower the platform toward your chest by bending your knees.",
-      "Pause at the bottom when your thighs are just above parallel to the platform.",
-      "Press the platform forcefully away by extending your knees without locking out."
+      "Sit on the machine with the pad resting on your shins.",
+      "Grip the handles and extend your legs until straight.",
+      "Pause briefly at the top and squeeze your quads.",
+      "Slowly lower your legs to the starting position and repeat."
     ]
   }
 };
@@ -439,4 +439,3 @@ function initBackToTop() {
     });
   });
 }
-
