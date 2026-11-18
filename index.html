@@ -1,133 +1,992 @@
 <!DOCTYPE html>
-
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<meta name="description" content="Gym & home workout trainer with workout plans, diet guide, calorie & BMI tracker.">
+  <!-- Primary Meta Tags -->
+  <title>GymX - Gym & Home Workout Trainer | 100% Offline Fitness App</title>
+  <meta name="title" content="GymX - Gym & Home Workout Trainer | 100% Offline Fitness App">
+  <meta name="description" content="GymX is your personal fitness companion for gym and home workouts. 200+ exercises with ultra-clear 3D form guides with proper instruction & muscle highlights, Professional bodybuilding plans and Home workout, Diet plans & smart fitness calculators.">
+  <meta name="keywords" content="gym workout app, home workout no equipment, 3d exercise guide, gym workout planner, offline workout app, fitness tracker, bmi calculator, bodybuilding plan, hindi workout app">
+  <meta name="author" content="GymX - Gym Workout Trainer">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://gymxworkout.github.io/">
 
-		<!-- Open Graph Meta Tags -->
-		<meta property="og:title" content="GymX - Gym Workout Trainer">
-		<meta property="og:description" content="Gym & Home Workout Trainer with Workout Plans, Diet Guide, BMI, Calorie & Protein Calculator.">
-		<meta property="og:image" content="https://gymxworkout.github.io/assets/app_icon.png">
-		<link rel="icon" type="image/png" href="/app_icon.png">
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://gymxworkout.github.io">
-		<meta name="google-site-verification" content="DlTFylU_HJkMpbPmx9tEHGbWWTGxBo9Hy9UjoOyeXfE" />
-		
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content="GymX - Gym Workout Trainer">
-		<meta name="twitter:description" content="Gym & Home Workout Trainer with Workout Plans, Diet Guide, BMI, Calorie & Protein Calculator.">
-		<meta name="twitter:image" content="https://gymxworkout.github.io/assets/app_icon.png">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gymxworkout.github.io/">
+  <meta property="og:title" content="GymX - Gym & Home Workout Trainer | 100% Offline Fitness App">
+  <meta property="og:description" content="Train at home or gym with 200+ 3D exercises, structured routines, diet guides & fitness calculators. 100% Free & Works Offline.">
+  <meta property="og:image" content="https://gymxworkout.github.io/assets/app_icon.webp">
 
-		<title>GymX - Gym Workout Trainer</title>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://gymxworkout.github.io/">
+  <meta property="twitter:title" content="GymX - Gym & Home Workout Trainer">
+  <meta property="twitter:description" content="Free gym & home workout trainer with 3D video animations. No subscription needed, works 100% offline.">
+  <meta property="twitter:image" content="https://gymxworkout.github.io/assets/app_icon.webp">
 
-		<link rel="icon" href="assets/app_icon.png" type="image/png"> <!-- Tab Icon --> 
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<header class="hero">
-			<img class="logo" src="assets/app_icon.png" alt="GymX Logo">
-			<h1>GymX - Gym Workout Trainer</h1>
-			<p>Your Complete Gym & Home Workout Companion</p>
-			<p>Build muscle, lose weight, burn fat and stay fit with professional workout plans, diet guides, fitness calculators and progress tracking.</p>
-			
-			<a class="btn"
-				href="https://play.google.com/store/apps/details?id=com.gymx.workout"
-				target="_blank"
-				rel="noopener noreferrer">Download on Google Play
-			</a>
-			
-		</header>
+  <!-- Google Verification & Favicons -->
+  <meta name="google-site-verification" content="DlTFylU_HJkMpbPmx9tEHGbWWTGxBo9Hy9UjoOyeXfE">
+  <link rel="icon" type="image/webp" href="assets/app_icon.webp">
+  <link rel="apple-touch-icon" href="assets/app_icon.webp">
 
-		<main class="container">
-			<section class="stats">
-				<div class="stat"><h2>100,000+</h2><span>Downloads</span></div>
-				<div class="stat"><h2>4.6★</h2><span>User Rating</span></div>
-				<div class="stat"><h2>200+</h2><span>Exercises</span></div>
-				<div class="stat"><h2>Offline</h2><span>No Internet Required</span></div>
-			</section>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 
-			<h2>Why Choose GymX?</h2>
-			
-			<section class="grid">
-				<div class="card"><h3>🏋️ Workout Plans</h3><p>Bodybuilding, muscle gain, fat loss, weight loss, powerlifting and fitness plans.</p></div>
-				<div class="card"><h3>💪 Exercise Library</h3><p>100+ exercises with GIF animations and detailed instructions.</p></div>
-				<div class="card"><h3>🍎 Diet & Fitness</h3><p>Diet guide, calorie, protein and BMI calculators.</p></div>
-				<div class="card"><h3>📈 Progress Tracking</h3><p>Track sets, reps, weights and favourites.</p></div>
-				<div class="card"><h3>🏠 Home & Gym</h3><p>Designed for both home and gym workouts.</p></div>
-				<div class="card"><h3>📱 Works Offline</h3><p>Train anytime after installation without internet.</p></div>
-			</section>
+  <!-- Schema.org JSON-LD Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "GymX - Gym Workout Trainer",
+    "operatingSystem": "Android",
+    "applicationCategory": "HealthApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "ratingCount": "12500"
+    },
+    "description": "GymX is your personal fitness companion for gym and home workouts. 200+ exercises with ultra-clear 3D form guides with proper instruction & muscle highlights, Professional bodybuilding plans and Home workout, Diet plans & smart fitness calculators with complete offline access.",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=com.gymx.workout"
+  }
+  </script>
+</head>
+<body>
 
-			<h2 class="mt">App Screenshots</h2>
-			
-			<section class="gallery">
-				<div class="phone">
-					<div class="screen">
-						<img src="assets/home.png" alt="GymX Home Screen">
-					</div>
-				</div>
-				<div class="phone">
-					<div class="screen">
-						<img src="assets/bodypart.png" alt="BodyPart Workout">
-					</div>
-				</div>
-				<div class="phone">
-					<div class="screen">
-						<img src="assets/workout.png" alt="Workout List">
-					</div>
-				</div>
-				<div class="phone">
-					<div class="screen">
-						<img src="assets/workout_details.png" alt="Workout Details">
-					</div>
-				</div>
-				<div class="phone">
-					<div class="screen">
-						<img src="assets/plan.png" alt="Workout Plans">
-					</div>
-				</div>
-				<div class="phone">
-					<div class="screen">
-						<img src="assets/plan_day.png" alt="Workout Plan Days">
-					</div>
-				</div>
-				<div class="phone">
-					<div class="screen">
-						<img src="assets/plan_details.png" alt="Workout Plan Details">
-					</div>
-				</div>
-				<div class="phone">
-					<div class="screen">
-						<img src="assets/utility.png" alt="Fitness Utilities">
-					</div>
-				</div>
-		
-			</section>
-			
-			<!-- 
-			Inline style
-			<h2 class="mt" style="text-align:left;">Support</h2> 
-			-->
-			<h2 class="mt support-title">Support</h2>
-			
-			<p><a href="mailto:gymxworkout96@gmail.com">gymxworkout96@gmail.com</a></p>
+  <!-- ==========================================================================
+       Site Navigation
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand-logo" aria-label="GymX Home">
+        <img src="assets/gymx_logo.webp" alt="GymX" class="brand-wordmark" width="140" height="48">
+      </a>
 
-			<h2>Quick Links</h2>
-			<section class="quick-links">
-				<a href="privacy-policy">🔒 Privacy Policy</a>
-				<a href="terms-and-conditions">📄 Terms & Conditions</a>
-			</section>
-		</main>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#exercises" class="nav-link">3D Exercises</a></li>
+          <li><a href="#plans" class="nav-link">Workout Plans</a></li>
+          <li><a href="#utility" class="nav-link">Diets & Utility</a></li>
+          <li><a href="#about" class="nav-link">About & FAQ</a></li>
+        </ul>
+      </nav>
 
-	<footer>
-		<div class="container">
-			<p><strong>GymX - Gym Workout Trainer</strong></p>
-			<p>Gym & home workout trainer with workout plans, diet guide, calorie & BMI tracker.</p>
-			<p>© GymX Workout Trainer. All Rights Reserved.</p>
-		</div>
-	</footer>
-	<script src="js/main.js"></script>
-	</body>
+      <div class="header-actions">
+
+        <a href="https://play.google.com/store/apps/details?id=com.gymx.workout" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          Download App
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="title-line1">Real Workouts, Real Gains !</span>
+            <span class="title-line2">Train Anytime, Anywhere.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Your personal fitness companion for gym and home workouts. 200+ exercises with ultra-clear 3D form guides with proper instruction & muscle highlights, Professional bodybuilding plans and Home workout, Diet plans & smart fitness calculators.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="https://play.google.com/store/apps/details?id=com.gymx.workout" target="_blank" rel="noopener noreferrer" class="btn-playstore" aria-label="Get GymX on Google Play">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3.609 1.814L13.792 12 3.61 22.186c-.198-.198-.31-.47-.31-.762V2.576c0-.292.112-.564.31-.762zM15.207 13.414l2.585 2.586-11.834 6.76 9.249-9.346zm0-2.828L5.958 1.24l11.834 6.76-2.585 2.586zm1.414 1.414l3.965 2.266c.642.367 1.014.992 1.014 1.734s-.372 1.367-1.014 1.734l-3.965 2.266-2.414-2.414 2.414-2.414z"/>
+              </svg>
+              <div>
+                <span class="btn-text-sub">GET IT ON</span>
+                <span class="btn-text-main">Google Play</span>
+              </div>
+            </a>
+
+            <button class="btn-qr-trigger" type="button" aria-label="Scan QR Code to download">
+              <span>📱</span> Scan QR Code
+            </button>
+          </div>
+
+          <ul class="hero-trust-list">
+            <li class="hero-trust-item">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>100% Free</span>
+            </li>
+            <li class="hero-trust-item">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Works Offline</span>
+            </li>
+            <li class="hero-trust-item">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>For All Fitness Levels</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-device-wrapper">
+          <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <img src="assets/home.webp" alt="GymX 2.0 Dashboard Screen" class="phone-media" width="320" height="650">
+            </div>
+          </div>
+
+          <!-- 3D Exercise Floating Badge Positioned to the SIDE of the Mobile Design -->
+          <div class="hero-floating-card" aria-hidden="true">
+            <div class="hero-floating-icon"><img src="assets/app_icon.webp" alt="GymX Logo" class="brand-icon2"></div>
+            <div class="hero-floating-info">
+              <span class="hero-floating-title">200+ Exercises</span>
+              <span class="hero-floating-desc">Ultra-Smooth 3D Guides</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Proof & Metrics Bar
+         ========================================================================== -->
+    <section class="stats-bar">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">100K <span>+</span></div>
+          <div class="stat-label">Total Downloads</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4.6 <span>★</span></div>
+          <div class="stat-label">User Rating & Positive Reviews</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">200 <span>+</span></div>
+          <div class="stat-label">3D Animated Exercises</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100 <span>%</span></div>
+          <div class="stat-label">Offline Access</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3D Exercise Showcase Section (Video Never Cropped, No Tag Overlay)
+         ========================================================================== -->
+    <section id="exercises" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Ultra-Clear <span>3D Exercise Guides Preview</span></h2>
+          <p class="section-desc">
+            Master proper exercise form with animated 3D guides, step-by-step instructions, and targeted muscle activation.
+          </p>
+        </div>
+
+        <div class="exercise-categories">
+          <button class="tab-btn active" data-category="chest">💪 Chest</button>
+          <button class="tab-btn" data-category="arms">🦾 Arms</button>
+          <button class="tab-btn" data-category="back">🔙 Back</button>
+          <button class="tab-btn" data-category="shoulders">🏋️ Shoulders</button>
+          <button class="tab-btn" data-category="abs">🍫 Abs & Core</button>
+          <button class="tab-btn" data-category="legs">🦵 Legs</button>
+        </div>
+
+        <div class="exercise-showcase-card">
+          <!-- Video Frame without cropping or overlay text -->
+          <div class="exercise-media-frame">
+            <video id="exVideo" src="assets/chest_sample.mp4" autoplay loop muted playsinline></video>
+          </div>
+
+          <div class="exercise-details">
+            <h3 class="exercise-title" id="exTitle">Incline Barbell Bench Press</h3>
+
+            <div class="exercise-meta-row">
+              <span class="meta-chip">⚙️ Equipment: <strong id="exEquipment">Barbell & Incline Bench</strong></span>
+              <span class="meta-chip">🎯 Target: <strong id="exTargetMuscle">Pectoralis Major (Clavicular Head)</strong></span>
+            </div>
+
+            <div class="muscle-diagram-box">
+              <img id="exMuscleImg" src="assets/pectoralis_major.webp" alt="Pectoralis Major Anatomy">
+              <div class="muscle-diagram-text">
+                <h5>Target Muscle Activation</h5>
+                <p>Secondary: <span id="exSecondaryMuscle">Triceps Brachii, Anterior Deltoids</span></p>
+              </div>
+            </div>
+
+            <ul class="exercise-instructions" id="exInstructions">
+              <li>Set your bench to a 30 to 45-degree angle with barbell racked safely above.</li>
+              <li>Grip the bar slightly wider than shoulder-width and unrack with elbows angled slightly inward.</li>
+              <li>Lower the bar under control toward upper chest while driving shoulder blades into bench.</li>
+              <li>Pause for half a second at bottom, then press back up explosively.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Structured Workout Plans Section (Badge Removed)
+         ========================================================================== -->
+    <section id="plans" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Structured <span>Workout Programs</span></h2>
+          <p class="section-desc">
+            Take the guesswork out of your routine. Every plan specifies target muscle splits, optimal set and repetition counts, and exact rest intervals.
+          </p>
+        </div>
+
+        <div class="plans-grid">
+          <!-- 1. Bodybuilding -->
+          <div class="plan-card">
+            <div class="plan-card-top">
+              <div class="plan-card-header">
+                <div class="plan-icon-wrapper">
+                  <img src="assets/plan_bodybuilding.webp" alt="Bodybuilding Program">
+                </div>
+                <h3 class="plan-title">Bodybuilding Plan</h3>
+              </div>
+              <p class="plan-desc">Classic 6-day split designed to build balanced muscular symmetry, maximum thickness, and peak hypertrophy.</p>
+              <span class="plan-badge-days">📅 6 Days / Week Split</span>
+            </div>
+            <div class="plan-split-preview">
+              <div class="plan-split-row">
+				<div><span class="plan-split-day">Monday</span><span class="plan-split-focus">Chest</span></div>
+				<div><span class="plan-split-day">Tuesday</span><span class="plan-split-focus">Back</span></div>
+			  </div>
+			  <div class="plan-split-row">
+				<div><span class="plan-split-day">Wednesday</span><span class="plan-split-focus">Arms</span></div>
+				<div><span class="plan-split-day">Thursday</span><span class="plan-split-focus">Shoulders</span></div>
+			  </div>
+			  <div class="plan-split-row">
+				<div><span class="plan-split-day">Friday</span><span class="plan-split-focus">Abs</span></div>
+				<div><span class="plan-split-day">Saturday</span><span class="plan-split-focus">Legs</span></div>
+			  </div>
+            </div>
+          </div>
+
+          <!-- 2. Fitness Conditioning -->
+          <div class="plan-card">
+            <div class="plan-card-top">
+              <div class="plan-card-header">
+                <div class="plan-icon-wrapper">
+                  <img src="assets/plan_fitness.webp" alt="Fitness Program">
+                </div>
+                <h3 class="plan-title">Fitness Conditioning</h3>
+              </div>
+              <p class="plan-desc">High-energy full-body workout split prioritizing cardiovascular endurance, functional mobility, and lean muscle tone.</p>
+              <span class="plan-badge-days">📅 3 Days / Week Split</span>
+            </div>
+            <div class="plan-split-preview">
+              <div class="plan-split-row"><span class="plan-split-day">Monday</span><span class="plan-split-focus">Full Body Power</span></div>
+              <div class="plan-split-row"><span class="plan-split-day">Wednesday</span><span class="plan-split-focus">Core & Cardio Flow</span></div>
+              <div class="plan-split-row"><span class="plan-split-day">Friday</span><span class="plan-split-focus">Athletic Conditioning</span></div>
+            </div>
+          </div>
+
+          <!-- 3. Powerlifting -->
+          <div class="plan-card">
+            <div class="plan-card-top">
+              <div class="plan-card-header">
+                <div class="plan-icon-wrapper">
+                  <img src="assets/plan_powerlifting.webp" alt="Powerlifting Program">
+                </div>
+                <h3 class="plan-title">Powerlifting Program</h3>
+              </div>
+              <p class="plan-desc">Heavy compound progression focused on driving new PRs on the Big Three: Squat, Bench Press, and Deadlift.</p>
+              <span class="plan-badge-days">📅 4 Days / Week Heavy Split</span>
+            </div>
+            <div class="plan-split-preview">
+              <div class="plan-split-row"><span class="plan-split-day">Day 1</span><span class="plan-split-focus">Squat & Posterior Chain</span></div>
+              <div class="plan-split-row"><span class="plan-split-day">Day 2</span><span class="plan-split-focus">Bench Press & Triceps</span></div>
+              <div class="plan-split-row"><span class="plan-split-day">Day 3</span><span class="plan-split-focus">Deadlift & Upper Back</span></div>
+              <div class="plan-split-row"><span class="plan-split-day">Day 4</span><span class="plan-split-focus">Overhead Press & Accessories</span></div>
+            </div>
+          </div>
+
+          <!-- 4. Lean Body -->
+          <div class="plan-card">
+            <div class="plan-card-top">
+              <div class="plan-card-header">
+                <div class="plan-icon-wrapper">
+                  <img src="assets/plan_lean_body.webp" alt="Lean Body Routine">
+                </div>
+                <h3 class="plan-title">Lean Body Cut</h3>
+              </div>
+              <p class="plan-desc">Metabolic conditioning and hypertrophy supersets to incinerate body fat while locking in rock-hard muscle definition.</p>
+              <span class="plan-badge-days">📅 6 Days / Week Split</span>
+            </div>
+            <div class="plan-split-preview">
+              <div class="plan-split-row"><span class="plan-split-day">Monday</span><span class="plan-split-focus">Upper Body Metabolic</span></div>
+              <div class="plan-split-row"><span class="plan-split-day">Tuesday</span><span class="plan-split-focus">Lower Body Burn</span></div>
+              <div class="plan-split-row"><span class="plan-split-day">Wednesday</span><span class="plan-split-focus">High Intensity Abs & Core</span></div>
+            </div>
+          </div>
+
+          <!-- 5. Bulky Body -->
+          <div class="plan-card">
+            <div class="plan-card-top">
+              <div class="plan-card-header">
+                <div class="plan-icon-wrapper">
+                  <img src="assets/plan_bulky_body.webp" alt="Bulky Body Program">
+                </div>
+                <h3 class="plan-title">Bulky Mass Builder</h3>
+              </div>
+              <p class="plan-desc">Maximum training volume and progressive overload designed for hardgainers wanting to pack on serious weight and density.</p>
+              <span class="plan-badge-days">📅 6 Days / Week Split</span>
+            </div>
+            <div class="plan-split-preview">
+              <div class="plan-split-row"><span class="plan-split-day">Monday</span><span class="plan-split-focus">Heavy Chest Pressing</span></div>
+              <div class="plan-split-row"><span class="plan-split-day">Tuesday</span><span class="plan-split-focus">Heavy Back & Traps</span></div>
+              <div class="plan-split-row"><span class="plan-split-day">Wednesday</span><span class="plan-split-focus">Heavy Leg Volume</span></div>
+            </div>
+          </div>
+
+          <!-- 6. Home Workout -->
+          <div class="plan-card">
+            <div class="plan-card-top">
+              <div class="plan-card-header">
+                <div class="plan-icon-wrapper">
+                  <img src="assets/home_workout.webp" alt="Home Workout Routine">
+                </div>
+                <h3 class="plan-title">Home Workout Routine</h3>
+              </div>
+              <p class="plan-desc">Zero equipment needed. 15-30 minute bodyweight routines that sculpt your chest, arms, core, and legs at home.</p>
+              <span class="plan-badge-days">📅 6 Days / Zero Equipment</span>
+            </div>
+            <div class="plan-split-preview">
+              <div class="plan-split-row"><span class="plan-split-day">Day 1</span><span class="plan-split-focus">Bodyweight Push & Chest</span></div>
+              <div class="plan-split-row"><span class="plan-split-day">Day 2</span><span class="plan-split-focus">Pull & Posterior Tension</span></div>
+              <div class="plan-split-row"><span class="plan-split-day">Day 3</span><span class="plan-split-focus">Calisthenics Core & Abs</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Home Workout Spotlight (Compact Section)
+         ========================================================================== -->
+    <section id="home-workout" class="section section-compact">
+      <div class="container feature-split-grid">
+        <div class="feature-split-content">
+          <div class="section-tag">No Equipment Needed</div>
+          <h2>Train Anywhere with <span>Zero Excuses.</span></h2>
+          <p>
+            No gym membership? Traveling? In a hotel or basement? GymX provides a complete suite of bodyweight routines specifically engineered to build strength, sculpt muscle, and torch calories without a single dumbbell.
+          </p>
+
+          <ul class="feature-split-list">
+            <li class="feature-split-item">
+              <div class="feature-icon-badge">🏠</div>
+              <div class="feature-item-text">
+                <h4>Dedicated Bodyweight Splits</h4>
+                <p>Targeted daily routines for Chest, Back, Arms, Shoulders, and Legs using pure calisthenics.</p>
+              </div>
+            </li>
+            <li class="feature-split-item">
+              <div class="feature-icon-badge">⏱️</div>
+              <div class="feature-item-text">
+                <h4>High-Efficiency 15–30 Min Sessions</h4>
+                <p>Designed for busy schedules so you can stay consistent without sacrificing quality.</p>
+              </div>
+            </li>
+            <li class="feature-split-item">
+              <div class="feature-icon-badge">📶</div>
+              <div class="feature-item-text">
+                <h4>100% Offline Capability</h4>
+                <p>Never drops connection. Guides and animations run instantly in dead zones or off-grid.</p>
+              </div>
+            </li>
+          </ul>
+
+          <a href="https://play.google.com/store/apps/details?id=com.gymx.workout" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Start Home Workouts Free
+          </a>
+        </div>
+
+        <div class="hero-device-wrapper">
+          <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <img src="assets/bodypart.webp" alt="GymX Bodypart Category View" class="phone-media" width="320" height="650">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Nutrition & Meal Plans Section
+         ========================================================================== -->
+    <section id="utility" class="section section-alt">
+      <span id="diet"></span>
+      <div class="container feature-split-grid" style="direction: rtl;">
+        <div class="feature-split-content" style="direction: ltr;">
+          <div class="section-tag">Diets &amp; Nutrition Guide</div>
+          <h2>Balanced Diet Guides &<br><span>Healthy Meal Plans</span></h2>
+          <p>
+            Training is only half the battle. GymX equips you with practical, realistic nutrition guidance tailored to fuel your training sessions and accelerate recovery.
+          </p>
+
+          <ul class="feature-split-list">
+            <li class="feature-split-item">
+              <div class="feature-icon-badge">🥗</div>
+              <div class="feature-item-text">
+                <h4>5 Goal-Tailored Programs</h4>
+                <p>Specific dietary guides for Bulky Mass, Lean Cutting, Weight Gain, Weight Loss, and Overall Fitness.</p>
+              </div>
+            </li>
+            <li class="feature-split-item">
+              <div class="feature-icon-badge">⏰</div>
+              <div class="feature-item-text">
+                <h4>Structured 6-Meal Schedules</h4>
+                <p>Clear timing intervals (Meal 1 through Meal 6 with optimal 2–3 hour gaps) to sustain all-day anabolism.</p>
+              </div>
+            </li>
+            <li class="feature-split-item">
+              <div class="feature-icon-badge">🥑</div>
+              <div class="feature-item-text">
+                <h4>Essential Macronutrient Guidance</h4>
+                <p>Simple food recommendations that make meal prep easy, affordable, and nutritious.</p>
+              </div>
+            </li>
+          </ul>
+
+          <a href="https://play.google.com/store/apps/details?id=com.gymx.workout" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Explore Diet Guides in App
+          </a>
+        </div>
+
+        <div class="hero-device-wrapper" style="direction: ltr;">
+          <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <img src="assets/diets.webp" alt="GymX Nutrition & Diet Plan" class="phone-media" width="320" height="650">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Interactive Fitness Calculators Section (Badge Removed)
+         ========================================================================== -->
+    <section id="calculators" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Built-In <span>Fitness Calculators</span></h2>
+          <p class="section-desc">
+            Calculate your vital body metrics in seconds right here on the web, or use them completely offline anytime inside the GymX app.
+          </p>
+        </div>
+
+        <div class="calc-container">
+          <div class="calc-nav">
+            <button class="calc-tab-btn active" data-target="paneBmi">
+              <span>⚖️</span> BMI Calculator
+            </button>
+            <button class="calc-tab-btn" data-target="paneProtein">
+              <span>🥩</span> Daily Protein Calculator
+            </button>
+          </div>
+
+          <div class="calc-body">
+            <!-- BMI Calculator Pane -->
+            <div id="paneBmi" class="calc-pane active">
+              <div class="unit-switch">
+                <button type="button" class="unit-btn bmi-unit-btn active" data-unit="metric">Metric (cm / kg)</button>
+                <button type="button" class="unit-btn bmi-unit-btn" data-unit="imperial">Imperial (ft, in / lbs)</button>
+              </div>
+
+              <form id="bmiForm">
+                <div class="calc-form-grid">
+                  <div class="form-group field-metric">
+                    <label class="form-label" for="bmiHeightCm">Height (cm)</label>
+                    <input type="number" id="bmiHeightCm" class="form-input" placeholder="e.g. 175" min="50" max="260" value="178">
+                  </div>
+                  <div class="form-group field-metric">
+                    <label class="form-label" for="bmiWeightKg">Weight (kg)</label>
+                    <input type="number" id="bmiWeightKg" class="form-input" placeholder="e.g. 75" min="20" max="300" value="76">
+                  </div>
+
+                  <div class="form-group field-imperial" style="display:none;">
+                    <label class="form-label">Height (Feet & Inches)</label>
+                    <div style="display:flex; gap:10px;">
+                      <input type="number" id="bmiHeightFt" class="form-input" placeholder="ft" min="2" max="8" value="5" style="width:50%;">
+                      <input type="number" id="bmiHeightIn" class="form-input" placeholder="in" min="0" max="11" value="10" style="width:50%;">
+                    </div>
+                  </div>
+                  <div class="form-group field-imperial" style="display:none;">
+                    <label class="form-label" for="bmiWeightLbs">Weight (lbs)</label>
+                    <input type="number" id="bmiWeightLbs" class="form-input" placeholder="e.g. 165" min="40" max="600" value="168">
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%;">
+                  Calculate My BMI Score
+                </button>
+              </form>
+
+              <div id="bmiResultBox" class="calc-result-box">
+                <div class="calc-score" id="bmiScore">24.0</div>
+                <div class="calc-category" id="bmiCategory">Normal / Healthy Weight</div>
+                <p class="calc-message" id="bmiMessage">
+                  Great job! You are in the optimal weight range. Focus on progressive strength training and muscle toning with GymX.
+                </p>
+              </div>
+            </div>
+
+            <!-- Protein Calculator Pane -->
+            <div id="paneProtein" class="calc-pane">
+              <form id="proteinForm">
+                <div class="calc-form-grid">
+                  <div class="form-group">
+                    <label class="form-label" for="protWeight">Your Body Weight</label>
+                    <input type="number" id="protWeight" class="form-input" placeholder="e.g. 75" value="75" min="20" max="300" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="protUnit">Weight Unit</label>
+                    <select id="protUnit" class="form-select">
+                      <option value="kg" selected>Kilograms (kg)</option>
+                      <option value="lbs">Pounds (lbs)</option>
+                    </select>
+                  </div>
+                  <div class="form-group" style="grid-column: 1 / -1;">
+                    <label class="form-label" for="protActivity">Fitness & Training Goal</label>
+                    <select id="protActivity" class="form-select">
+                      <option value="2.0" selected>Weight Training / Muscle Gain (Hypertrophy - 2.0g/kg)</option>
+                      <option value="1.6">Fat Loss & Muscle Preservation (Cutting - 1.6g/kg)</option>
+                      <option value="1.2">Athletic & Sports Conditioning (Endurance - 1.2g/kg)</option>
+                      <option value="0.8">Sedentary / General Maintenance (0.8g/kg)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%;">
+                  Calculate Daily Protein Target
+                </button>
+              </form>
+
+              <div id="proteinResultBox" class="calc-result-box">
+                <div class="calc-score" id="proteinScore">150g - 170g</div>
+                <div class="calc-category">Optimal Daily Protein Target</div>
+                <p class="calc-message" id="proteinMessage">
+                  Divide this protein intake across 4–5 balanced meals of 30–40g each for optimal protein synthesis. Complete high-protein food breakdowns are available inside GymX!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Why Choose GymX Matrix
+         ========================================================================== -->
+    <section id="why-gymx" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">The GymX Advantage</div>
+          <h2 class="section-title">Why Lifters Choose <span>GymX</span></h2>
+          <p class="section-desc">
+            Built from the ground up to eliminate clutter, monthly paywalls, and frustrating complexity.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">📴</div>
+            <h3 class="benefit-title">100% Offline Support</h3>
+            <p class="benefit-desc">No network connection required. Built to run flawlessly in basement gym facilities or remote travel destinations.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">💳</div>
+            <h3 class="benefit-title">Zero Paywalls or Subs</h3>
+            <p class="benefit-desc">No expensive recurring subscriptions. Every exercise, routine, calculator, and diet guide is 100% free.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">🔒</div>
+            <h3 class="benefit-title">Privacy & No Login</h3>
+            <p class="benefit-desc">No passwords or mandatory social login. Open the app and begin logging your training session in under three seconds.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">🎯</div>
+            <h3 class="benefit-title">All Experience Levels</h3>
+            <p class="benefit-desc">Structured for beginners, intermediate, and advanced lifters with guided progression and form tips.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         App Screenshot Gallery (8 Screenshots: 4 + 4 Grid)
+         ========================================================================== -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Designed for <span>Fast Gym Sessions</span></h2>
+          <p class="section-desc">
+            A high-contrast dark interface crafted for readability under harsh gym lights and sweat-friendly single-tap navigation.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-card">
+            <div class="gallery-card-screen">
+              <img src="assets/home.webp" alt="GymX Workout Dashboard" loading="lazy" width="600" height="1074">
+            </div>
+            <div class="gallery-caption">
+              <h4>Workout Dashboard</h4>
+              <p>One-tap access to categories & plans</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-screen">
+              <img src="assets/bodypart.webp" alt="GymX Muscle Group Hub" loading="lazy" width="600" height="1074">
+            </div>
+            <div class="gallery-caption">
+              <h4>Muscle Group Hub</h4>
+              <p>Chest, Back, Arms, Shoulders, Abs & Legs</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-screen">
+              <img src="assets/workout.webp" alt="GymX Exercise Library" loading="lazy" width="600" height="1074">
+            </div>
+            <div class="gallery-caption">
+              <h4>200+ Exercise Library</h4>
+              <p>Detailed lists by targeted muscle</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-screen">
+              <img src="assets/workout_details.webp" alt="GymX 3D Exercise Form Guide" loading="lazy" width="600" height="1074">
+            </div>
+            <div class="gallery-caption">
+              <h4>3D Form Guides</h4>
+              <p>Step-by-step instructions & anatomy maps</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-screen">
+              <img src="assets/plan.webp" alt="GymX Structured Workout Plans" loading="lazy" width="600" height="1074">
+            </div>
+            <div class="gallery-caption">
+              <h4>Structured Plans</h4>
+              <p>Bodybuilding, Strength, Fat Loss & Home</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-screen">
+              <img src="assets/plan_day.webp" alt="GymX Weekly Split Schedule" loading="lazy" width="600" height="1074">
+            </div>
+            <div class="gallery-caption">
+              <h4>Weekly Split Schedule</h4>
+              <p>Organized 3-day to 6-day training splits</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-screen">
+              <img src="assets/plan_details.webp" alt="GymX Guided Session Details" loading="lazy" width="600" height="1074">
+            </div>
+            <div class="gallery-caption">
+              <h4>Guided Session View</h4>
+              <p>Sets, reps & rest timing at a glance</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-screen">
+              <img src="assets/utility.webp" alt="GymX Fitness Utilities & Calculators" loading="lazy" width="600" height="1074">
+            </div>
+            <div class="gallery-caption">
+              <h4>Fitness Utilities</h4>
+              <p>BMI, Calorie, Protein & Diet protocols</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         About Us Section (from App & Social Links)
+         ========================================================================== -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About <span>GymX</span></h2>
+          <p class="section-desc">Your Personal Fitness Companion for Gym and Home Training.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div>
+              <h3>Our Story</h3>
+              <p>
+                GymX was born from a passion for fitness and technology. Founded in 2025, our mission is to make professional-grade workout guidance accessible to everyone, anywhere. Whether you're a complete beginner or an experienced athlete, GymX adapts to your fitness journey.
+              </p>
+
+              <h4 class="about-subheading">What Makes Us Different:</h4>
+              <ul class="about-features-list">
+                <li class="about-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>200+ 3D exercises with proper guidance</span>
+                </li>
+                <li class="about-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Progress tracking & favorite routines</span>
+                </li>
+                <li class="about-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>No expensive equipment needed</span>
+                </li>
+                <li class="about-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Workouts for all fitness levels</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="made-in-india-badge">
+              Made with ❤️ in India
+            </div>
+          </div>
+
+          <div class="about-social-card">
+            <div>
+              <h4>Connect With Us</h4>
+              <p>Follow our official community pages for workout routines, fitness motivation, and app updates.</p>
+
+              <div class="social-links-row">
+                <a href="https://www.facebook.com/gymx.workoutapp" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GymX Facebook Page">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                  <span>Facebook</span>
+                </a>
+
+                <a href="https://www.instagram.com/gymx.workout" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GymX Instagram Page">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                  <span>Instagram</span>
+                </a>
+
+                <a href="mailto:gymxworkout96@gmail.com" class="social-pill" aria-label="Email GymX Support">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 4.712v-9.458l4.623 4.746zm-4.141-5.929h19.035l-9.517 7.761-9.518-7.761zm5.694 7.025l3.824 3.128 3.824-3.128 4.636 4.729h-16.92l4.636-4.729zm11.201 0.904l4.623-4.746v9.458l-4.623-4.712z"/></svg>
+                  <span>Contact Us</span>
+                </a>
+
+                <a href="https://gymxworkout.github.io/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GymX Official Website">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                  <span>Website</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FAQ Accordion Section
+         ========================================================================== -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+          <p class="section-desc">
+            Everything you need to know about the GymX app and how to get started on your fitness journey.
+          </p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item active">
+            <button type="button" class="faq-question" aria-expanded="true">
+              <span>Does GymX really work 100% offline without internet?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, absolutely. Once installed, all 200+ 3D exercise video guides, structured multi-day plans, fitness calculators, and diet guides remain accessible without an active internet connection or cellular data.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Is GymX completely free, or are there hidden subscription fees?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>GymX is 100% free to download and use. There are zero subscriptions, locked features, or trial paywalls. All exercises and plans are fully accessible to every user.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Can I use GymX if I don't have access to gym equipment?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. GymX includes a dedicated "Home Workout" category featuring complete bodyweight routines for Chest, Back, Arms, Shoulders, Core, and Legs that can be performed anywhere with zero equipment.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>How do the built-in fitness calculators work?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>GymX features clinically verified mathematical models for BMI (Metric & Imperial), Daily Maintenance and Surplus/Deficit Caloric intake, Protein Requirements based on training intensity, and Body Fat percentage using US Navy circumference formulas.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Can I track my sets, reps, and favorite exercises?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. GymX allows you to save your go-to exercises to Favorites for fast, one-tap access during training and log your workout progress directly in the app.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Do I need to create an account or provide an email to use the app?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>No. We respect your privacy. GymX requires zero registration, no account setup, and no personal email address. Simply install the app and begin training immediately.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Download CTA Banner
+         ========================================================================== -->
+    <section id="cta" class="section section-alt">
+      <div class="container">
+        <div class="cta-banner-wrapper">
+          <h2 class="cta-banner-title">Start Your Fitness <span>Transformation Today</span></h2>
+          <p class="cta-banner-desc">
+            Join over 100,000 lifters training smarter with 3D exercise guidance, structured bodybuilding routines, and offline freedom.
+          </p>
+
+          <div class="cta-action-row">
+            <a href="https://play.google.com/store/apps/details?id=com.gymx.workout" target="_blank" rel="noopener noreferrer" class="btn-playstore" aria-label="Download GymX on Google Play">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M3.609 1.814L13.792 12 3.61 22.186c-.198-.198-.31-.47-.31-.762V2.576c0-.292.112-.564.31-.762zM15.207 13.414l2.585 2.586-11.834 6.76 9.249-9.346zm0-2.828L5.958 1.24l11.834 6.76-2.585 2.586zm1.414 1.414l3.965 2.266c.642.367 1.014.992 1.014 1.734s-.372 1.367-1.014 1.734l-3.965 2.266-2.414-2.414 2.414-2.414z"/>
+              </svg>
+              <div>
+                <span class="btn-text-sub">DOWNLOAD FREE ON</span>
+                <span class="btn-text-main">Google Play</span>
+              </div>
+            </a>
+
+            <button class="btn-qr-trigger" type="button" aria-label="Open QR Code download modal">
+              <span>📱</span> Scan QR Code
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Master Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <img src="assets/gymx_logo.webp" alt="GymX" class="brand-wordmark" width="140" height="48">
+          </div>
+          <p>
+            Your ultimate gym and home workout trainer. Master proper form with 3D guides, build muscle, and optimize health 100% offline.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#exercises">3D Exercises</a></li>
+            <li><a href="#plans">Workout Plans</a></li>
+            <li><a href="#utility">Diets & Utility</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Support</h4>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+            <li><a href="#about">Contact & About</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Download</h4>
+          <ul class="footer-links">
+            <li><a href="https://play.google.com/store/apps/details?id=com.gymx.workout" target="_blank" rel="noopener noreferrer">Google Play Store</a></li>
+            <li><a href="#" class="btn-qr-trigger">Desktop QR Code</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 GymX - Gym Workout Trainer. All Rights Reserved.</p>
+        <p>Support: <a href="mailto:gymxworkout96@gmail.com" style="color:var(--accent);">gymxworkout96@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       QR Code Modal Popup
+       ========================================================================== -->
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-label="Scan QR Code to install GymX">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <h3>Get GymX on Your Phone</h3>
+      <p>Scan this QR code with your phone camera to download directly from Google Play:</p>
+      <img src="assets/qr_playstore.webp" alt="Google Play GymX QR Code" class="modal-qr-img" width="190" height="190">
+      <a href="https://play.google.com/store/apps/details?id=com.gymx.workout" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="width:100%;">
+        Open on Google Play
+      </a>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
 </html>
