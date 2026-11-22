@@ -2038,7 +2038,7 @@ html {
   }
 
   .hero-title .title-line1 {
-    white-space: normal;
+    white-space: nowrap;
   }
 
   .hero-subtitle {
@@ -2323,7 +2323,11 @@ html {
   }
 
   .hero-title {
-    font-size: clamp(2rem, 6.5vw, 2.5rem);
+    font-size: clamp(1.5rem, 5.8vw, 2.3rem);
+  }
+
+  .hero-title .title-line1 {
+    white-space: nowrap;
   }
 
   .section-title {
@@ -2444,8 +2448,12 @@ html {
   }
 
   .hero-title {
-    font-size: clamp(1.8rem, 7.8vw, 2.2rem);
+    font-size: clamp(1.28rem, 5.5vw, 1.7rem);
     margin-bottom: 6px;
+  }
+
+  .hero-title .title-line1 {
+    white-space: nowrap;
   }
 
   .hero-subtitle {
@@ -2838,7 +2846,11 @@ html {
   }
 
   .hero-title {
-    font-size: 1.65rem;
+    font-size: 1.25rem;
+  }
+
+  .hero-title .title-line1 {
+    white-space: nowrap;
   }
 
   .hero-trust-item {
