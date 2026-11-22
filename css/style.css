@@ -2186,10 +2186,12 @@ html {
   .nav-backdrop {
     display: block;
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
     background: rgba(0, 0, 0, 0.72);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
     z-index: 1040;
     opacity: 0;
     pointer-events: none;
@@ -2208,7 +2210,7 @@ html {
     width: 290px;
     max-width: 82vw;
     height: 100dvh;
-    background: var(--bg-card);
+    background: #1a1d24;
     flex-direction: column;
     padding: 22px 18px 28px 18px;
     gap: 10px;
