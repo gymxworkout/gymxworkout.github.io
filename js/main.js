@@ -42,26 +42,58 @@ function initSmoothScroll() {
 function initMobileNav() {
   const toggleBtn = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
+  const backdrop = document.querySelector('.nav-backdrop');
+  const closeBtn = document.querySelector('.nav-close-btn');
 
   if (!toggleBtn || !navLinks) return;
 
-  toggleBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    const isExpanded = navLinks.classList.contains('active');
-    toggleBtn.setAttribute('aria-expanded', isExpanded);
+  function openNav() {
+    navLinks.classList.add('active');
+    if (backdrop) backdrop.classList.add('active');
+    toggleBtn.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('nav-open');
+  }
+
+  function closeNav() {
+    navLinks.classList.remove('active');
+    if (backdrop) backdrop.classList.remove('active');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('nav-open');
+  }
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (navLinks.classList.contains('active')) {
+      closeNav();
+    } else {
+      openNav();
+    }
   });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeNav();
+    });
+  }
+
+  if (backdrop) {
+    backdrop.addEventListener('click', closeNav);
+  }
 
   navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('active');
-      toggleBtn.setAttribute('aria-expanded', 'false');
-    });
+    link.addEventListener('click', closeNav);
   });
 
-  document.addEventListener('click', (e) => {
-    if (!navLinks.contains(e.target) && !toggleBtn.contains(e.target) && navLinks.classList.contains('active')) {
-      navLinks.classList.remove('active');
-      toggleBtn.setAttribute('aria-expanded', 'false');
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+      closeNav();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900 && navLinks.classList.contains('active')) {
+      closeNav();
     }
   });
 }
