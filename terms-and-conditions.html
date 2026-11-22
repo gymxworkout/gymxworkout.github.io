@@ -75,11 +75,36 @@
       border: 1px solid rgba(255, 85, 0, 0.25);
     }
     @media (max-width: 768px) {
+      .legal-page {
+        margin-top: 68px;
+        padding: 36px 0 52px 0;
+      }
       .legal-card {
-        padding: 26px 20px;
+        padding: 26px 18px;
+        border-radius: 20px;
       }
       .legal-card h1 {
-        font-size: 1.7rem;
+        font-size: 1.65rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .legal-page {
+        padding: 26px 0 40px 0;
+      }
+      .legal-card {
+        padding: 20px 14px;
+        border-radius: 16px;
+      }
+      .legal-card h1 {
+        font-size: 1.4rem;
+      }
+      .legal-card h2 {
+        font-size: 1.05rem;
+      }
+      .email-badge {
+        word-break: break-all;
+        font-size: 0.8rem;
+        padding: 6px 10px;
       }
     }
   </style>
@@ -89,12 +114,21 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="brand-logo" aria-label="GymX Home">
-        <img src="assets/gymx_logo.webp" alt="GymX" class="brand-wordmark" width="140" height="48">
-      </a>
+      <div class="header-left">
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="nav-toggle-icon">☰</span>
+        </button>
+        <a href="index.html" class="brand-logo" aria-label="GymX Home">
+          <img src="assets/gymx_logo.webp" alt="GymX" class="brand-wordmark" width="140" height="48">
+        </a>
+      </div>
 
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
+          <li class="nav-drawer-header">
+            <img src="assets/gymx_logo.webp" alt="GymX" class="brand-wordmark" width="110" height="38">
+            <button class="nav-close-btn" aria-label="Close navigation menu">✕</button>
+          </li>
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="index.html#exercises" class="nav-link">3D Exercises</a></li>
           <li><a href="index.html#plans" class="nav-link">Workout Plans</a></li>
@@ -107,12 +141,10 @@
         <a href="https://play.google.com/store/apps/details?id=com.gymx.workout" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
           Download App
         </a>
-        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-          ☰
-        </button>
       </div>
     </div>
   </header>
+  <div class="nav-backdrop" aria-hidden="true"></div>
 
   <!-- Legal Content -->
   <main class="legal-page">
