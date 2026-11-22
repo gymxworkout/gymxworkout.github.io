@@ -65,12 +65,21 @@
        ========================================================================== -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#" class="brand-logo" aria-label="GymX Home">
-        <img src="assets/gymx_logo.webp" alt="GymX" class="brand-wordmark" width="140" height="48">
-      </a>
+      <div class="header-left">
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="nav-toggle-icon">☰</span>
+        </button>
+        <a href="#" class="brand-logo" aria-label="GymX Home">
+          <img src="assets/gymx_logo.webp" alt="GymX" class="brand-wordmark" width="140" height="48">
+        </a>
+      </div>
 
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
+          <li class="nav-drawer-header">
+            <img src="assets/gymx_logo.webp" alt="GymX" class="brand-wordmark" width="110" height="38">
+            <button class="nav-close-btn" aria-label="Close navigation menu">✕</button>
+          </li>
           <li><a href="#" class="nav-link active">Home</a></li>
           <li><a href="#exercises" class="nav-link">3D Exercises</a></li>
           <li><a href="#plans" class="nav-link">Workout Plans</a></li>
@@ -80,16 +89,13 @@
       </nav>
 
       <div class="header-actions">
-
         <a href="https://play.google.com/store/apps/details?id=com.gymx.workout" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
           Download App
         </a>
-        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-          ☰
-        </button>
       </div>
     </div>
   </header>
+  <div class="nav-backdrop" aria-hidden="true"></div>
 
   <main>
     <!-- ==========================================================================
